@@ -38,3 +38,4 @@ class BigcommerceApiTest
 
 }
 ```
+See also: https://github.com/yjenith/bigcommerce-api-java-lite
