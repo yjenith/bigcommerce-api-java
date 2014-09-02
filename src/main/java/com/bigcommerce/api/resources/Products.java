@@ -75,9 +75,7 @@ public class Products implements Resource {
 		Element xml = this.connection.get(path.toString()).asXml();
 
 		if (xml != null) {
-			NodeList productTags = xml.getElementsByTagName("product");
-			Element productTag = (Element) productTags.item(0);
-			product = new Product(productTag);
+			product = new Product(xml);
 		}
 
 		return product;
