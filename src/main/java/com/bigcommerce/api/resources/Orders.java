@@ -81,9 +81,7 @@ public class Orders implements Resource {
 		Element xml = this.connection.get(path.toString()).asXml();
 
 		if (xml != null) {
-			NodeList orderTags = xml.getElementsByTagName("order");
-			Element orderTag = (Element) orderTags.item(0);
-			order = new Order(orderTag);
+			order = new Order(xml);
 		}
 
 		return order;
