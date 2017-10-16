@@ -4,10 +4,10 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-class Resource {
+class Response {
 	Element document;
 
-	Resource(Element document) {
+	Response(Element document) {
 		this.document = document;
 	}
 
